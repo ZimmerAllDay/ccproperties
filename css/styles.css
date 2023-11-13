@@ -1,0 +1,91 @@
+/* Define your font faces first */
+@font-face {
+    font-family: 'Homizio';
+    src: url('../fonts/regular.ttf') format('truetype');
+    font-weight: normal; /* Could also be 400 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homizio';
+    src: url('../fonts/bold.ttf') format('truetype');
+    font-weight: bold; /* Could also be 700 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homizio';
+    src: url('../fonts/black.ttf') format('truetype');
+    font-weight: 900; /* 'black' is typically heavier than 'bold', often 900 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homizio';
+    src: url('../fonts/light.ttf') format('truetype');
+    font-weight: 300; /* 'lighter' is typically 300 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homizio';
+    src: url('../fonts/thin.ttf') format('truetype');
+    font-weight: 100; /* 'thin' is typically 100 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homizio';
+    src: url('../fonts/medium.ttf') format('truetype');
+    font-weight: 500; /* 'medium' is typically 500 */
+    font-style: normal;
+}
+
+body {
+    font-family: 'Homizio', sans-serif; /* Replace with your actual font name */
+    color: #333; /* Adjust the color to match your design */
+    margin: 0;
+    padding: 0;
+    background-color: #c2c2c2; /* Or any other color or image */
+}
+
+header {
+    background-color: #c2c2c2; /* Replace with actual color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+#logo {
+    width: 150px; /* Adjust as per your logo's dimensions */
+    height: auto;
+}
+
+main {
+    width: 80%;
+    max-width: 1200px; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#rental-criteria, #general-requirements {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1a2791; /* Replace with actual color */
+}
+
+h2 {
+    color: #333; /* Replace with actual color */
+}
+
+h1 {
+    border-bottom: 2px solid #1a2791; /* Replace with actual color */
+    padding-bottom: 10px;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+/* Add additional CSS rules as needed */
