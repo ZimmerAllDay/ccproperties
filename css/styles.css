@@ -2,21 +2,14 @@
 @font-face {
     font-family: 'Homizio';
     src: url('../fonts/regular.ttf') format('truetype');
-    font-weight: normal; /* Could also be 400 */
+    font-weight: 400; /* Could also be 400 */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Homizio';
     src: url('../fonts/bold.ttf') format('truetype');
-    font-weight: bold; /* Could also be 700 */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Homizio';
-    src: url('../fonts/black.ttf') format('truetype');
-    font-weight: 900; /* 'black' is typically heavier than 'bold', often 900 */
+    font-weight: 700; /* Could also be 700 */
     font-style: normal;
 }
 
@@ -29,34 +22,56 @@
 
 @font-face {
     font-family: 'Homizio';
-    src: url('../fonts/thin.ttf') format('truetype');
-    font-weight: 100; /* 'thin' is typically 100 */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Homizio';
     src: url('../fonts/medium.ttf') format('truetype');
     font-weight: 500; /* 'medium' is typically 500 */
     font-style: normal;
 }
 
+.regular {
+    font-weight: normal; /* This will set the text to the regular font weight */
+}
+
+.bold {
+    font-weight: bold; /* This will set the text to bold font weight */
+}
+
+/* This is for text you want in 'Homizio' font with normal weight */
+.regular-homizio {
+    font-family: 'Homizio', sans-serif;
+    font-weight: 400; /* Corresponds to the normal weight for Homizio */
+}
+
+/* This is for text you want in 'Homizio' font with bold weight */
+.bold-homizio {
+    font-family: 'Homizio', sans-serif;
+    font-weight: 700; /* Corresponds to the bold weight for Homizio */
+}
+
+.medium-homizio {
+    font-family: 'Homizio', sans-serif;
+    font-weight: 500; /* Corresponds to the bold weight for Homizio */
+}
+
 body {
-    font-family: 'Homizio', sans-serif; /* Replace with your actual font name */
-    color: #333; /* Adjust the color to match your design */
+    font-family: 'Open Sans', sans-serif;/* Replace with your actual font name */
+    font-size: 14px;
+    color: #616161; /* Adjust the color to match your design */
     margin: 0;
     padding: 0;
     background-color: #c2c2c2; /* Or any other color or image */
+    text-align: center;
 }
 
 header {
     background-color: #c2c2c2; /* Replace with actual color */
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
+    border-bottom: 2px solid #1a2791;
+    box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.3);
 }
 
 #logo {
-    width: 150px; /* Adjust as per your logo's dimensions */
+    width: 160px; /* Adjust as per your logo's dimensions */
     height: auto;
 }
 
@@ -64,28 +79,53 @@ main {
     width: 80%;
     max-width: 1200px; /* Adjust the width as needed */
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
-#rental-criteria, #general-requirements {
+section {
+    margin-top: 0;
     margin-bottom: 30px;
+    padding-top: 0;
 }
 
 h1 {
+    font-family: 'Homizio', sans-serif; /* This will apply Homizio to all your headings */
     color: #1a2791; /* Replace with actual color */
+    font-size: 30px;
+    margin-top: 10;
+    padding-bottom: 0;
 }
 
-h2 {
-    color: #333; /* Replace with actual color */
+h2,h3,h4,h5,h6 {
+    color: #616161; /* Replace with actual color */
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
 }
 
-h1 {
-    border-bottom: 2px solid #1a2791; /* Replace with actual color */
-    padding-bottom: 10px;
+hr {
+    height: 1px;
+    background-color: #616161;
+    width: 50%;
 }
-
 ol {
     list-style-position: inside;
 }
 
-/* Add additional CSS rules as needed */
+footer {
+    border-top: 2px solid #1a2791;
+    box-shadow: 0 -4px 20px 4px rgba(0, 0, 0, 0.3);
+    background-color: #c2c2c2; /* Replace with actual color */
+    text-align: center; 
+    font-size: 18px;
+    color: #1a2791; 
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#EEH {
+    width: 120px;
+    height: auto;
+}
+
